@@ -27,5 +27,5 @@ script.js
 images/
 
 ## 🌍 Live Demo
+https://okayomiii.github.io/Clothing-store/
 
-(Will add after deployment)
