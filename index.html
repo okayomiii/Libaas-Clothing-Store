@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libaas.com</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container p-2">
+
+    <a class="navbar-brand fw-bold" href="#home">LIBAAS</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#">
+            <i class="bi bi-cart3"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </li>
+
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#categories">Categories</a></li>
+        <li><a class="nav-link" href="#offers">Offers</a></li>
+        <li><a class="nav-link" href="#products">Products</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+
+        <li class="ms-2">
+          <button class="btn btn-light btn-sm" id="theme-btn">🌙</button>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<button id="topBtn">⬆️</button>
+
+<section id="home">
+  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-pause="false">
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="banner-slide" style="background-image:url('images/1bg.jpg')">
+          <div class="overlay"></div>
+          <div class="banner-content text-white text-center">
+            <h1>LIBAAS</h1>
+            <p>Wear Your Style</p>
+            <a href="#categories" class="btn btn-light mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="banner-slide" style="background-image:url('images/bg2.jpg')">
+          <div class="overlay"></div>
+          <div class="banner-content text-white text-center">
+            <h1>Immense Collection</h1>
+            <p>Trendy & Stylish</p>
+            <a href="#products" class="btn btn-light mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="banner-slide" style="background-image:url('images/bg3.jpg')">
+          <div class="overlay"></div>
+          <div class="banner-content text-white text-center">
+            <h1>Premium Fashion</h1>
+            <p>Upgrade Your Style</p>
+            <a href="#products" class="btn btn-light mt-3">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="container my-5" id="categories">
+  <h2 class="text-center mb-4">Categories</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="category-card">
+        <img src="images/men.jpg">
+        <div class="category-overlay"><h3>Men</h3></div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="category-card">
+        <img src="images/women.jpg">
+        <div class="category-overlay"><h3>Women</h3></div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="category-card">
+        <img src="images/kids2.jpg">
+        <div class="category-overlay"><h3>Kids</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="offers">
+  <h2 class="text-center mb-5">Special Offers</h2>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="offer-card">
+        <img src="images/offerm.jpg">
+        <div class="offer-overlay">
+          <h3>Flat 50% Off</h3>
+          <p>On Men's Collection</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="offer-card">
+        <img src="images/offerf.jpg">
+        <div class="offer-overlay">
+          <h3>Buy 1 Get 1</h3>
+          <p>On Women's Wear</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mb-4 text-center">
+  <input type="text" id="search-box" class="form-control w-50 mx-auto" placeholder="Search products...">
+</div>
+
+<section class="container my-5" id="products">
+  <h2 class="text-center mb-5">Our Collection</h2>
+
+  <h4 class="mb-4">Men</h4>
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/tshirt.jpg">
+        <div class="product-info text-center">
+          <h6>T-Shirt</h6>
+          <p class="price">₹499</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/footwear1.jpg">
+        <div class="product-info text-center">
+          <h6>Footwear</h6>
+          <p class="price">₹1199</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/trousers.jpg">
+        <div class="product-info text-center">
+          <h6>Trouser</h6>
+          <p class="price">₹1299</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/jacket.jpg">
+        <div class="product-info text-center">
+          <h6>Jacket</h6>
+          <p class="price">₹2499</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mt-5 mb-4">Women</h4>
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/footwear2.jpg">
+        <div class="product-info text-center">
+          <h6>Heels</h6>
+          <p class="price">₹1499</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/top.jpg">
+        <div class="product-info text-center">
+          <h6>Casual Top</h6>
+          <p class="price">₹599</p>
+          <button class="btn btn-dark btn-sm ">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/ethnic.jpg">
+        <div class="product-info text-center">
+          <h6>Ethnic Wear</h6>
+          <p class="price">₹1999</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/fjeans.jpg">
+        <div class="product-info text-center">
+          <h6>Denim Jeans</h6>
+          <p class="price">₹1499</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="mt-5 mb-4">Kids</h4>
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/kid2.jpg">
+        <div class="product-info text-center">
+          <h6>Kids Shirt</h6>
+          <p class="price">₹399</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/kid1.jpg">
+        <div class="product-info text-center">
+          <h6>Kids Jacket</h6>
+          <p class="price">₹699</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/kid3.jpg">
+        <div class="product-info text-center">
+          <h6>Kids Bottom Wear</h6>
+          <p class="price">₹499</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 product-item">
+      <div class="product-card">
+        <img src="images/kid4.jpg">
+        <div class="product-info text-center">
+          <h6>Kids Dress</h6>
+          <p class="price">₹999</p>
+          <button class="btn btn-dark btn-sm cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="container my-5" id="about">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="images/logo1.png" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2>About Libaas</h2>
+      <p>Modern fashion meets comfort and individuality.</p>
+      <a href="#products" class="btn btn-dark mt-3">Explore Collection</a>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="contact">
+  <h2 class="text-center mb-4">Contact Us</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <input class="form-control mb-3" placeholder="Your Name">
+      <input class="form-control mb-3" placeholder="Your Email">
+      <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+      <button class="btn btn-dark">Send Message</button>
+    </div>
+
+    <div class="col-md-6">
+      <h5>Get in Touch</h5>
+      <p>Email: support@libaas.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: India</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Libaas.com | Wear Your Style</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
